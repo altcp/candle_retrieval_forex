@@ -1,2 +1,2 @@
-# candle_retrieval_forex
+# candle_retrieval_oanda
 Get Candles from Oanda V20 API (CLI)
