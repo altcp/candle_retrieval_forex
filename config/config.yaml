@@ -10,6 +10,7 @@ locations:
     db_path: ./data/local.db
     server_path: #Replace with your S3 or S3-like (e.g., minio) Server Path
     server_bucket: #Replace with Your Bucket Name
+    server_region: #Replace with Your S3 or S3-like Server Region
     
     
 configuration:

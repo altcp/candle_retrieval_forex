@@ -187,6 +187,7 @@ def post_db():
     
     db_path = config['locations']['db_path']
     server_path = config['locations']['server_path']
+    server_region = config['locations']['server_region']
     server_bucket = config['locations']['server_bucket']
 
     
@@ -207,7 +208,7 @@ def post_db():
         s3 = boto3.resource('s3', endpoint_url=server_path, aws_access_key_id=minio_key, 
                             aws_secret_access_key=minio_access,
                             config=Config(signature_version='s3v4'), 
-                            region_name='us-east-1' )
+                            region_name=server_region)
         
         posting_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
         file = str(posting_date.weekday()) + "-OANDA.db"
