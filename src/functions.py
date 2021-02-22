@@ -137,10 +137,10 @@ def update_db(df_one, symbol):
         query = "SELECT * FROM [" + table_one_name + "]"
         temp_date = pd.read_sql_query(query, conn)
     
-        last_r_time = parser.parse(temp_date.at[(len(temp_date.index) - 1), 'time'])
-        current_r_time = parser.parse(str(df_one.at[(len(df_one.index) - 1), 'time']))
+        last_record_time = parser.parse(temp_date.at[(len(temp_date.index) - 1), 'time'])
+        current_record_time = parser.parse(str(df_one.at[(len(df_one.index) - 1), 'time']))
     
-        if(last_r_time >= current_r_time):
+        if(last_record_time >= current_record_time):
             print("Record Exists in Local DB - " + symbol)   
         else:
             #Update
