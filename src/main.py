@@ -93,7 +93,7 @@ def main():
     
     #Update all Tradeable Symbols
     for i in range(31):
-        
+
         try:
             sym = get_symbols(i) 
             df1 = f.get_data(sym)

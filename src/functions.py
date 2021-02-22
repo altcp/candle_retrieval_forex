@@ -51,8 +51,15 @@ def get_data(sym):
     
     #Get Time
     now = get_time()
+    
+    
+    def check_weekday(date):
+        # Mon-Fri (0-4)
+        while date.weekday() > 4: 
+            date -= timedelta(days=1)
+        return date
 
-
+    
     #Time to Epoch
     start = now.replace(hour=data_start, minute=0, second=0, microsecond=0)
     end = now.replace(hour=data_end, minute=0, second=0, microsecond=0)
