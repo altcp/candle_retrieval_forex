@@ -1,19 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[2]:
 
 import json
 import yaml
@@ -30,13 +17,7 @@ from botocore.client import Config
 from datetime import date, timedelta
 
 
-# In[ ]:
 
-
-
-
-
-# In[ ]:
 def get_time():
 
     #Try to obtain Server Time
@@ -52,8 +33,6 @@ def get_time():
 
     return now 
 
-
-# In[3]:
 
 
 def get_data(sym):
@@ -104,20 +83,6 @@ def get_data(sym):
     return df1
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[4]:
-
 
 def update_db(df_one, symbol):
     
@@ -157,20 +122,6 @@ def update_db(df_one, symbol):
     return None
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[5]:
-
 
 def post_db():
 
@@ -208,22 +159,5 @@ def post_db():
         print("Upload Failed.")
 
     return None
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
