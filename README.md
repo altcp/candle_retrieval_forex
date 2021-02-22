@@ -3,7 +3,7 @@ Get Candles from Oanda V20 API (CRON)<br/><br/><br/>
 
 ## Overview
 
-The tool retrieves price information from OANDA and appends it into a local sqllite database on a daily basis. It then uploads the appended db file to a S3 or S3 like server using Boto3.<br/><br/><br/>
+The tool retrieves price information from OANDA and appends it into a local sqllite database ("db") on a daily basis. It then uploads the appended db file to a S3 or S3-like server using Boto3.<br/><br/><br/>
 
 ## Instructions for the use of a release
 Python 3.8.5 was the python version used in testing prior to containerization.<br/>
