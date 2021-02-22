@@ -56,6 +56,7 @@ def get_data(sym):
     granuality = config['configuration']['granuality']
     data_start = config['configuration']['data_start']
     data_end = config['configuration']['data_end']
+    price = config['configuration']['price']
     
     
     #Get Time
@@ -87,7 +88,7 @@ def get_data(sym):
     
 
     #Headers and Parameters
-    payload_1 = {'from': start_epoch, 'to': end_epoch, 'price': 'M', 'granularity': granuality}
+    payload_1 = {'from': start_epoch, 'to': end_epoch, 'price': price, 'granularity': granuality}
     auth = {"Authorization": "Bearer " + authorization}
     url = url + sym + "/candles" 
     
