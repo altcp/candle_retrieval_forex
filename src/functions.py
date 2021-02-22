@@ -37,9 +37,20 @@ from datetime import date, timedelta
 
 
 # In[ ]:
+def get_time():
 
+    #Try to obtain Server Time
+    x = ntplib.NTPClient()
+    
+    try:
+        now = datetime.datetime.utcfromtimestamp(x.request('uk.pool.ntp.org').tx_time)
+    except:
+        try:
+            now = datetime.datetime.utcfromtimestamp(x.request('europe.pool.ntp.org').tx_time)
+        except:
+            now = datetime.datetime.now()
 
-
+    return now 
 
 
 # In[3]:
@@ -60,24 +71,9 @@ def get_data(sym):
     
     
     #Get Time
-    x = ntplib.NTPClient()
-    
-    try:
-        now = datetime.datetime.utcfromtimestamp(x.request('uk.pool.ntp.org').tx_time)
-    except:
-        try:
-            now = datetime.datetime.utcfromtimestamp(x.request('europe.pool.ntp.org').tx_time)
-        except:
-            now = datetime.datetime.now()
-            
-            
-    def check_weekday(date):
-        # Mon-Fri (0-4)
-        while date.weekday() > 4: 
-            date -= timedelta(days=1)
-        return date
-    
-    
+    now = get_time()
+
+
     #Time to Epoch
     start = now.replace(hour=data_start, minute=0, second=0, microsecond=0)
     end = now.replace(hour=data_end, minute=0, second=0, microsecond=0)
@@ -192,15 +188,7 @@ def post_db():
 
     
     #Get Time
-    x = ntplib.NTPClient()
-    
-    try:
-        now = datetime.datetime.utcfromtimestamp(x.request('uk.pool.ntp.org').tx_time)
-    except:
-        try:
-            now = datetime.datetime.utcfromtimestamp(x.request('europe.pool.ntp.org').tx_time)
-        except:
-            now = datetime.datetime.now()
+    now = get_time()
     
 
     #Upload
