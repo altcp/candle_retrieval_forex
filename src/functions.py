@@ -38,7 +38,7 @@ def get_time():
 def get_data(sym):
     
     #Configurations
-    with open('./config/config.yaml') as file:
+    with open('./candle_retrieval_oanda/config/config.yaml') as file:
         config = yaml.safe_load(file)
         
     authorization = config['configuration']['authorization'] 
@@ -94,7 +94,7 @@ def get_data(sym):
 def update_db(df_one, symbol):
     
     #Configurations
-    with open('./config/config.yaml') as file:
+    with open('./candle_retrieval_oanda/config/config.yaml') as file:
         config = yaml.safe_load(file)
         
     db_path = config['locations']['db_path']
@@ -133,7 +133,7 @@ def update_db(df_one, symbol):
 def post_db():
 
     #Configurations
-    with open('./config/config.yaml') as file:
+    with open('./candle_retrieval_oanda/config/config.yaml') as file:
         config = yaml.safe_load(file)
         
     minio_key = config['settings']['minio_key']
