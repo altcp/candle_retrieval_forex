@@ -98,8 +98,8 @@ def get_data(sym):
     del df['complete']
 
     df['time'] = pd.to_datetime(df['time']).dt.tz_localize(None)
-    df.columns = ['vol','time', 'open','high','low', 'close']
-    df1 = df[['time','vol','high','low','open', 'close']]
+    df.columns = ['vol', 'time', 'open', 'high', 'low', 'close']
+    df1 = df[['time', 'vol', 'high', 'low', 'open', 'close']]
     
     return df1
 

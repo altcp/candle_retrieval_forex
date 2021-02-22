@@ -13,8 +13,8 @@ You may need to create a log folder in the base folder to store error logs.
 
 In the Linux Terminal navigate to the base folder:<br/>
 
-1.To first install required dependencies, TYPE: pip install -r requirements.txt<br/>
-2.To run the CRON JOB on a daliy basis, crontab setup.cron<br/><br/>
+1. To first install required dependencies, TYPE: pip install -r requirements.txt<br/>
+2. To run the CRON JOB on a daliy basis, crontab setup.cron<br/><br/>
 
 To configure this, navigate to the config subfolder and edit the config.yml file - Instructions Within.<br/><br/><br/>
 
