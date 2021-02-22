@@ -15,7 +15,7 @@ In the Linux Terminal navigate to the base folder:<br/>
 
 1. To first install required dependencies, TYPE: pip install -r requirements.txt<br/>
 2. To run the CRON JOB on a daliy basis, crontab setup.cron<br/>
-3. Make Executable shell scripts (i.e., run.sh) and python files (i.e., main.py and functions.py) using chmod +x 
+3. Make Executable shell script (i.e., run.sh) and python files (i.e., main.py and functions.py) using chmod +x 
 <br/><br/>
 
 To configure this, navigate to the config subfolder and edit the config.yml file - Instructions Within.<br/><br/><br/>
