@@ -8,7 +8,7 @@ The tool retrieves price information from OANDA and appends it onto a local sqll
 ## Instructions for the use of a release
 Python 3.8.5 was the python version used in testing prior to containerization.<br/>
 Ubuntu Server 20.04.2 LTS on Raspberry Pi 4 2GB was the testing environment.
-You may need to create a log folder in the base folder to store error logs.
+MINIO on Raspberry Pi 4 4GB was the S3-like backup server used.
 <br/><br/>
 
 In the Linux Terminal navigate to the base folder:<br/>
