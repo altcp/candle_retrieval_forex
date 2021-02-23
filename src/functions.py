@@ -54,6 +54,8 @@ def get_data(sym):
     
     
     def check_weekday(date):
+        #Adjust to Yesterday
+        date -= timedelta(days=1)
         # Mon-Fri (0-4)
         while date.weekday() > 4: 
             date -= timedelta(days=1)

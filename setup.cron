@@ -1,2 +1,2 @@
-00 00 * * 1-5 /home/ubuntu/candle_retrieval_oanda/run.sh >> /home/ubuntu/candle_retrieval_oanda/log/cron.log 2> /home/ubuntu/candle_retrieval_oanda/log/err.log
+00 01 * * 1-5 /home/ubuntu/candle_retrieval_oanda/run.sh >> /home/ubuntu/candle_retrieval_oanda/log/cron.log 2> /home/ubuntu/candle_retrieval_oanda/log/err.log
 

@@ -90,7 +90,8 @@ def main():
     print(" ")
     print("OFDC: Activated at " +  str(ts))
     print(" ")
-    
+
+
     #Update all Tradeable Symbols
     for i in range(31):
 
