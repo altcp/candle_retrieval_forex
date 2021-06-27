@@ -20,17 +20,8 @@ In the Linux Terminal navigate to the base folder:<br/>
 
 To configure this, navigate to the config subfolder and edit the config.yml file - Instructions Within.<br/><br/><br/>
 
-## Discussion
-
-I aim to write clear, simple and clean code so that others can inspect, maintain or append with ease. Sponsoring me helps others navigate better (e.g., with speed, simplicity and etc.) as it allows me to focus on delivering a better product or thing than on paying the bills.<br/><br/>
-
-You can do this thru GitHub Sponsors if and when it is made available to me.<br/><br/><br/>
-
-## Disclaimer
-
-I bear no responsibilty for any loss or financial loss incurred by you or by anyone as a result of providing this automation.<br/><br/><br/>
 
 ## Contributing
-
-You can contribute by informing me of typos, bugs, errors, omissions, improvements and general feedback. Further, please see CONTRIBUTING.md<br/><br/><br/>
+Superceeded
+<br/><br/><br/>
 
